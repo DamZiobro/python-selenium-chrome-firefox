@@ -8,7 +8,6 @@ RUN apt-get update -y && apt-get install -y wget curl unzip libgconf-2-4
 RUN sh -c 'echo "APT::Default-Release "stable";" >> /etc/apt/apt.conf' 
 RUN sh -c 'echo "deb http://ftp.hr.debian.org/debian sid main contrib non-free" >> /etc/apt/sources.list'
 RUN apt-get update -y && apt-get install -yt sid firefox
-RUN apt-get update -y && apt-get install -y xvfb python3 python3-pip 
 
 
 # Download, unzip, and install geckodriver
